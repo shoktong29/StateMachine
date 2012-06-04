@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B96EC43157C6B22006A10B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B96EC42157C6B22006A10B8 /* UIKit.framework */; };
+		5B96EC45157C6B22006A10B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B96EC44157C6B22006A10B8 /* Foundation.framework */; };
+		5B96EC47157C6B22006A10B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B96EC46157C6B22006A10B8 /* CoreGraphics.framework */; };
+		5B96EC49157C6B22006A10B8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B96EC48157C6B22006A10B8 /* CoreData.framework */; };
+		5B96EC4F157C6B22006A10B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B96EC4D157C6B22006A10B8 /* InfoPlist.strings */; };
+		5B96EC51157C6B22006A10B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B96EC50157C6B22006A10B8 /* main.m */; };
+		5B96EC55157C6B22006A10B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B96EC54157C6B22006A10B8 /* AppDelegate.m */; };
+		5B96EC58157C6B22006A10B8 /* StateMachine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B96EC56157C6B22006A10B8 /* StateMachine.xcdatamodeld */; };
+		5B96EC64157C73E1006A10B8 /* Miner.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B96EC63157C73E1006A10B8 /* Miner.m */; };
+		5B96EC67157C748D006A10B8 /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B96EC66157C748D006A10B8 /* State.m */; };
+		5B96EC6A157C791B006A10B8 /* StateVisitBankAndDepositGold.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B96EC69157C791A006A10B8 /* StateVisitBankAndDepositGold.m */; };
+		5B96EC6D157C7949006A10B8 /* StateEnterMineAndDigForNugget.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B96EC6C157C7949006A10B8 /* StateEnterMineAndDigForNugget.m */; };
+		5B96EC70157C7BAF006A10B8 /* StateQuenchThirst.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B96EC6F157C7BAF006A10B8 /* StateQuenchThirst.m */; };
+		5B96EC74157CA170006A10B8 /* AIComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B96EC73157CA16F006A10B8 /* AIComponent.m */; };
+		5B96EC78157CA4A6006A10B8 /* StateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B96EC77157CA4A6006A10B8 /* StateFactory.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B96EC3E157C6B22006A10B8 /* StateMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B96EC42157C6B22006A10B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5B96EC44157C6B22006A10B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5B96EC46157C6B22006A10B8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5B96EC48157C6B22006A10B8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5B96EC4C157C6B22006A10B8 /* StateMachine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StateMachine-Info.plist"; sourceTree = "<group>"; };
+		5B96EC4E157C6B22006A10B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5B96EC50157C6B22006A10B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5B96EC52157C6B22006A10B8 /* StateMachine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StateMachine-Prefix.pch"; sourceTree = "<group>"; };
+		5B96EC53157C6B22006A10B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5B96EC54157C6B22006A10B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5B96EC57157C6B22006A10B8 /* StateMachine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StateMachine.xcdatamodel; sourceTree = "<group>"; };
+		5B96EC62157C73E1006A10B8 /* Miner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Miner.h; sourceTree = "<group>"; };
+		5B96EC63157C73E1006A10B8 /* Miner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Miner.m; sourceTree = "<group>"; };
+		5B96EC65157C748D006A10B8 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		5B96EC66157C748D006A10B8 /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
+		5B96EC68157C791A006A10B8 /* StateVisitBankAndDepositGold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateVisitBankAndDepositGold.h; sourceTree = "<group>"; };
+		5B96EC69157C791A006A10B8 /* StateVisitBankAndDepositGold.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateVisitBankAndDepositGold.m; sourceTree = "<group>"; };
+		5B96EC6B157C7949006A10B8 /* StateEnterMineAndDigForNugget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateEnterMineAndDigForNugget.h; sourceTree = "<group>"; };
+		5B96EC6C157C7949006A10B8 /* StateEnterMineAndDigForNugget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateEnterMineAndDigForNugget.m; sourceTree = "<group>"; };
+		5B96EC6E157C7BAF006A10B8 /* StateQuenchThirst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateQuenchThirst.h; sourceTree = "<group>"; };
+		5B96EC6F157C7BAF006A10B8 /* StateQuenchThirst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateQuenchThirst.m; sourceTree = "<group>"; };
+		5B96EC71157C9B17006A10B8 /* StateMachineProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateMachineProtocol.h; sourceTree = "<group>"; };
+		5B96EC72157CA16F006A10B8 /* AIComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIComponent.h; sourceTree = "<group>"; };
+		5B96EC73157CA16F006A10B8 /* AIComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIComponent.m; sourceTree = "<group>"; };
+		5B96EC76157CA4A6006A10B8 /* StateFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateFactory.h; sourceTree = "<group>"; };
+		5B96EC77157CA4A6006A10B8 /* StateFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateFactory.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B96EC3B157C6B22006A10B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B96EC43157C6B22006A10B8 /* UIKit.framework in Frameworks */,
+				5B96EC45157C6B22006A10B8 /* Foundation.framework in Frameworks */,
+				5B96EC47157C6B22006A10B8 /* CoreGraphics.framework in Frameworks */,
+				5B96EC49157C6B22006A10B8 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B96EC33157C6B21006A10B8 = {
+			isa = PBXGroup;
+			children = (
+				5B96EC4A157C6B22006A10B8 /* StateMachine */,
+				5B96EC41157C6B22006A10B8 /* Frameworks */,
+				5B96EC3F157C6B22006A10B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B96EC3F157C6B22006A10B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B96EC3E157C6B22006A10B8 /* StateMachine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B96EC41157C6B22006A10B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B96EC42157C6B22006A10B8 /* UIKit.framework */,
+				5B96EC44157C6B22006A10B8 /* Foundation.framework */,
+				5B96EC46157C6B22006A10B8 /* CoreGraphics.framework */,
+				5B96EC48157C6B22006A10B8 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B96EC4A157C6B22006A10B8 /* StateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				5B96EC53157C6B22006A10B8 /* AppDelegate.h */,
+				5B96EC54157C6B22006A10B8 /* AppDelegate.m */,
+				5B96EC56157C6B22006A10B8 /* StateMachine.xcdatamodeld */,
+				5B96EC71157C9B17006A10B8 /* StateMachineProtocol.h */,
+				5B96EC72157CA16F006A10B8 /* AIComponent.h */,
+				5B96EC73157CA16F006A10B8 /* AIComponent.m */,
+				5B96EC76157CA4A6006A10B8 /* StateFactory.h */,
+				5B96EC77157CA4A6006A10B8 /* StateFactory.m */,
+				5B96EC62157C73E1006A10B8 /* Miner.h */,
+				5B96EC63157C73E1006A10B8 /* Miner.m */,
+				5B96EC75157CA45F006A10B8 /* StateType */,
+				5B96EC4B157C6B22006A10B8 /* Supporting Files */,
+			);
+			path = StateMachine;
+			sourceTree = "<group>";
+		};
+		5B96EC4B157C6B22006A10B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B96EC4C157C6B22006A10B8 /* StateMachine-Info.plist */,
+				5B96EC4D157C6B22006A10B8 /* InfoPlist.strings */,
+				5B96EC50157C6B22006A10B8 /* main.m */,
+				5B96EC52157C6B22006A10B8 /* StateMachine-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B96EC75157CA45F006A10B8 /* StateType */ = {
+			isa = PBXGroup;
+			children = (
+				5B96EC65157C748D006A10B8 /* State.h */,
+				5B96EC66157C748D006A10B8 /* State.m */,
+				5B96EC68157C791A006A10B8 /* StateVisitBankAndDepositGold.h */,
+				5B96EC69157C791A006A10B8 /* StateVisitBankAndDepositGold.m */,
+				5B96EC6B157C7949006A10B8 /* StateEnterMineAndDigForNugget.h */,
+				5B96EC6C157C7949006A10B8 /* StateEnterMineAndDigForNugget.m */,
+				5B96EC6E157C7BAF006A10B8 /* StateQuenchThirst.h */,
+				5B96EC6F157C7BAF006A10B8 /* StateQuenchThirst.m */,
+			);
+			name = StateType;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B96EC3D157C6B22006A10B8 /* StateMachine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B96EC5B157C6B22006A10B8 /* Build configuration list for PBXNativeTarget "StateMachine" */;
+			buildPhases = (
+				5B96EC3A157C6B22006A10B8 /* Sources */,
+				5B96EC3B157C6B22006A10B8 /* Frameworks */,
+				5B96EC3C157C6B22006A10B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StateMachine;
+			productName = StateMachine;
+			productReference = 5B96EC3E157C6B22006A10B8 /* StateMachine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B96EC35157C6B21006A10B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 5B96EC38157C6B22006A10B8 /* Build configuration list for PBXProject "StateMachine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5B96EC33157C6B21006A10B8;
+			productRefGroup = 5B96EC3F157C6B22006A10B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B96EC3D157C6B22006A10B8 /* StateMachine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B96EC3C157C6B22006A10B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B96EC4F157C6B22006A10B8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B96EC3A157C6B22006A10B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B96EC51157C6B22006A10B8 /* main.m in Sources */,
+				5B96EC55157C6B22006A10B8 /* AppDelegate.m in Sources */,
+				5B96EC58157C6B22006A10B8 /* StateMachine.xcdatamodeld in Sources */,
+				5B96EC64157C73E1006A10B8 /* Miner.m in Sources */,
+				5B96EC67157C748D006A10B8 /* State.m in Sources */,
+				5B96EC6A157C791B006A10B8 /* StateVisitBankAndDepositGold.m in Sources */,
+				5B96EC6D157C7949006A10B8 /* StateEnterMineAndDigForNugget.m in Sources */,
+				5B96EC70157C7BAF006A10B8 /* StateQuenchThirst.m in Sources */,
+				5B96EC74157CA170006A10B8 /* AIComponent.m in Sources */,
+				5B96EC78157CA4A6006A10B8 /* StateFactory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5B96EC4D157C6B22006A10B8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B96EC4E157C6B22006A10B8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B96EC59157C6B22006A10B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B96EC5A157C6B22006A10B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B96EC5C157C6B22006A10B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StateMachine/StateMachine-Prefix.pch";
+				INFOPLIST_FILE = "StateMachine/StateMachine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5B96EC5D157C6B22006A10B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StateMachine/StateMachine-Prefix.pch";
+				INFOPLIST_FILE = "StateMachine/StateMachine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B96EC38157C6B22006A10B8 /* Build configuration list for PBXProject "StateMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B96EC59157C6B22006A10B8 /* Debug */,
+				5B96EC5A157C6B22006A10B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B96EC5B157C6B22006A10B8 /* Build configuration list for PBXNativeTarget "StateMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B96EC5C157C6B22006A10B8 /* Debug */,
+				5B96EC5D157C6B22006A10B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5B96EC56157C6B22006A10B8 /* StateMachine.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5B96EC57157C6B22006A10B8 /* StateMachine.xcdatamodel */,
+			);
+			currentVersion = 5B96EC57157C6B22006A10B8 /* StateMachine.xcdatamodel */;
+			path = StateMachine.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5B96EC35157C6B21006A10B8 /* Project object */;
+}
